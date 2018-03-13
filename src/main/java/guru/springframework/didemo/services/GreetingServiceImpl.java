@@ -7,8 +7,7 @@ public class GreetingServiceImpl implements GreetingService {
 
 	@Override
 	public String sayGreeting() {
-		System.out.println("Hello - I am greetingServiceImpl");
-		return "hello !!!";
+		return "hello - I am injected by property";
 	}
 
 }

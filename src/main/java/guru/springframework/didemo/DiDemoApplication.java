@@ -16,14 +16,12 @@ public class DiDemoApplication {
 	public static void main(String[] args) {
 	 ApplicationContext ctx =	SpringApplication.run(DiDemoApplication.class, args);
 	 MyController myController = (MyController)ctx.getBean("myController");
-	 myController.hello();
+	 System.out.println(myController.hello());
 	 ConstructorInjectedController cic = (ConstructorInjectedController)ctx.getBean("constructorInjectedController");
-	 cic.sayHello();
+	 System.out.println(cic.sayHello());
 	 SetterInjectedController sic = (SetterInjectedController)ctx.getBean("setterInjectedController");
-	 sic.sayHello();
+	 System.out.println(sic.sayHello());
 	 PropertyInjectedController pic = (PropertyInjectedController)ctx.getBean("propertyInjectedController");
-	 pic.sayHello();
-	 GreetingService greetingService = (GreetingService)ctx.getBean("greetingServiceImpl");
-	 greetingService.sayGreeting();
+	 System.out.println(pic.sayHello());
 	}
 }

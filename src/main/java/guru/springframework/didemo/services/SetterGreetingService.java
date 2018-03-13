@@ -7,7 +7,6 @@ public class SetterGreetingService implements GreetingService {
 
 	@Override
 	public String sayGreeting() {
-		System.out.println("Hello - I am injected by Setter");
 		return "Hello - I am injected by Setter";
 	}
 
