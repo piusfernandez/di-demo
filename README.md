@@ -4,3 +4,4 @@ Added Setter, Constructor & property based injection
 @Qualifier
 @Primary
 @Profile
+@Profile default
