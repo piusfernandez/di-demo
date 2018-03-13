@@ -8,7 +8,6 @@ import guru.springframework.didemo.controllers.ConstructorInjectedController;
 import guru.springframework.didemo.controllers.MyController;
 import guru.springframework.didemo.controllers.PropertyInjectedController;
 import guru.springframework.didemo.controllers.SetterInjectedController;
-import guru.springframework.didemo.services.GreetingService;
 
 @SpringBootApplication
 public class DiDemoApplication {
