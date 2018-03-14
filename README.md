@@ -5,3 +5,4 @@ Added Setter, Constructor & property based injection
 @Primary
 @Profile
 @Profile default
+Bean Lifecycle class
