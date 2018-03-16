@@ -8,6 +8,7 @@ import guru.springframework.didemo.controllers.ConstructorInjectedController;
 import guru.springframework.didemo.controllers.MyController;
 import guru.springframework.didemo.controllers.PropertyInjectedController;
 import guru.springframework.didemo.controllers.SetterInjectedController;
+import guru.springframework.didemo.services.GreetingServiceFactory;
 
 @SpringBootApplication
 public class DiDemoApplication {
@@ -22,5 +23,9 @@ public class DiDemoApplication {
 	 System.out.println(sic.sayHello());
 	 PropertyInjectedController pic = (PropertyInjectedController)ctx.getBean("propertyInjectedController");
 	 System.out.println(pic.sayHello());
+	 
+	 System.out.println("-------------------------");
+	 GreetingServiceFactory greetingServiceFactory = (GreetingServiceFactory)ctx.getBean("greetingServiceFactory");
+	 System.out.println(greetingServiceFactory.getService("es").sayGreeting());
 	}
 }
