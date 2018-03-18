@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+import guru.springframework.didemo.services.ConstructorGreetingService;
 import guru.springframework.didemo.services.GreetingServiceImpl;
 
 public class ConstructorInjectedControllerTest {
@@ -13,11 +14,11 @@ public class ConstructorInjectedControllerTest {
 	
 	@Before
 	public void setup()	{
-		cic = new ConstructorInjectedController(new GreetingServiceImpl());
+		cic = new ConstructorInjectedController(new ConstructorGreetingService());
 	}
 	
 	@Test
 	public void testGreeting()	{
-		assertEquals("hello !!!", cic.sayHello());
+		assertEquals("Hello - I am injected by Constructor", cic.sayHello());
 	}
 }

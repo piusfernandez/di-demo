@@ -1,0 +1,10 @@
+guru:
+  username: yml-pius
+  password: yml-password
+  dburl: mysql:yml-url
+
+---
+spring:
+  profiles: de
+guru:
+  username: yml-de-pius  

@@ -1,0 +1,26 @@
+# this is a comment
+
+name: Pius
+names: # list of names
+  - Pius
+  - Bryan
+  - Reeba
+  
+book:
+     author: Joe Buck
+     publisher: random house
+     
+boolean1: yes
+boolean2: true
+boolean3: True
+string_val: "This is it's quote"
+colon_string: "my concerns:" 
+include_new_lines: |
+  abcd
+  ewer
+  dgss
+
+ignore_new_line: >
+  this is
+  sdf
+  

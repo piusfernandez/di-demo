@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guru.springframework.didemo.services.GreetingServiceImpl;
+import guru.springframework.didemo.services.SetterGreetingService;
 
 public class SetterInjectedControllerTest {
 
@@ -14,11 +15,11 @@ public class SetterInjectedControllerTest {
 	@Before
 	public void setup() {
 		sic = new SetterInjectedController();
-		sic.setGreetingService(new GreetingServiceImpl());
+		sic.setGreetingService(new SetterGreetingService());
 	}
 	
 	@Test
 	public void testGreeting()	{
-		assertEquals("hello !!!", sic.sayHello());
+		assertEquals("Hello - I am injected by Setter", sic.sayHello());
 	}
 }

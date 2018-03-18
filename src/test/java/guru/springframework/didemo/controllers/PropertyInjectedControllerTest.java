@@ -19,6 +19,6 @@ public class PropertyInjectedControllerTest {
 	
 	@Test
 	public void testHello()	{
-		assertEquals("hello !!!", pic.sayHello());
+		assertEquals("hello - I am injected by property", pic.sayHello());
 	}
 }
