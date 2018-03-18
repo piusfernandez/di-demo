@@ -7,3 +7,4 @@ Added Setter, Constructor & property based injection
 @Profile default
 Bean Lifecycle class
 BeanFactory
+External Configuration properties
